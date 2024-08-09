@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Optional: Set font-family for consistency */
 }
 
 header {
@@ -15,14 +15,14 @@ header {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.25em; /* 75% larger than the default text size */
 }
 
 /* Main content area */
 main {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px; /* Adjusted margin to offset section margin */
+    margin: 0; /* Remove default margin */
 }
 
 /* Section styling */
@@ -33,6 +33,7 @@ main {
     position: relative;
     margin: 10px; /* Margin around sections */
     background-color: #f4f4f4; /* Light background color for sections */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 /* Title styling */
@@ -51,23 +52,27 @@ main {
 /* Desktop: 992px and above */
 @media (min-width: 992px) {
     .section {
-        width: calc(33.33% - 20px); /* Adjusted for margin */
+        width: calc(33.33% - 20px); /* 1/3 of width minus margin */
+        float: left; /* Float sections side by side */
     }
 }
 
 /* Tablet: 768px to 991px */
 @media (min-width: 768px) and (max-width: 991px) {
     .section {
-        width: calc(50% - 20px); /* Adjusted for margin */
+        width: calc(50% - 20px); /* 1/2 of width minus margin */
+        float: left; /* Float sections side by side */
     }
     .section:nth-child(3) {
-        width: 100%;
+        width: calc(100% - 20px); /* Full width for the third section */
+        float: none; /* Remove float for the third section */
     }
 }
 
 /* Mobile: 767px and below */
 @media (max-width: 767px) {
     .section {
-        width: 100%;
+        width: calc(100% - 20px); /* Full width minus margin */
+        float: none; /* Remove float */
     }
 }
