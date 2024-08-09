@@ -1,0 +1,70 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Main content area */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Section styling */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    color: white;
+    position: relative;
+    flex: 1;
+    margin: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+}
+
+/* Responsive Layout */
+
+/* Desktop: 992px and above */
+@media (min-width: 992px) {
+    .section {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Tablet: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: calc(50% - 20px);
+    }
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile: 767px and below */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
