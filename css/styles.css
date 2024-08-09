@@ -29,7 +29,7 @@ main {
 .section {
     border: 1px solid black;
     padding: 20px;
-    color: #333; /* Dark text color for contrast */
+    color: black; /* Dark text color for contrast */
     position: relative;
     margin: 10px; /* Margin around sections */
     background-color: #f4f4f4; /* Light background color for sections */
