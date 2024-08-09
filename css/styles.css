@@ -22,7 +22,7 @@ h1 {
 main {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px; /* Adjusted margin to offset section margin */
+    margin: -10px; /* Adjusted margin to offset section margin */
 }
 
 /* Section styling */
