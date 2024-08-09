@@ -3,22 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-color: black;
 }
 
 body {
     font-family: Arial, sans-serif;
-    font-color: black;
 }
 
 header {
     text-align: center;
     margin: 20px 0;
-}
-
-p {
-    font-color: black;
-    color: black;
 }
 
 h1 {
@@ -29,6 +22,7 @@ h1 {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px; /* Adjusted margin to offset section margin */
 }
 
 /* Section styling */
@@ -37,19 +31,19 @@ main {
     padding: 20px;
     color: #333; /* Dark text color for contrast */
     position: relative;
-    flex: 1;
-    margin: 10px;
+    margin: 10px; /* Margin around sections */
     background-color: #f4f4f4; /* Light background color for sections */
 }
 
-
+/* Title styling */
 .title {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #333;
-    color: black;
+    background-color: #007bff; /* Contrasting color for titles */
+    color: white;
     padding: 5px;
+    border: 1px solid black;
 }
 
 /* Responsive Layout */
@@ -57,14 +51,14 @@ main {
 /* Desktop: 992px and above */
 @media (min-width: 992px) {
     .section {
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 20px); /* Adjusted for margin */
     }
 }
 
 /* Tablet: 768px to 991px */
 @media (min-width: 768px) and (max-width: 991px) {
     .section {
-        width: calc(50% - 20px);
+        width: calc(50% - 20px); /* Adjusted for margin */
     }
     .section:nth-child(3) {
         width: 100%;
