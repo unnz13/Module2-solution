@@ -28,7 +28,7 @@ main {
 .section {
     border: 1px solid black;
     padding: 20px;
-    color: white;
+    color: black;
     position: relative;
     flex: 1;
     margin: 10px;
